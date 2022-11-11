@@ -1,0 +1,6 @@
+{
+  "text.autoconfig.stackable.option.stackSize": "The Max Stack Size.",
+  "text.autoconfig.stackable.option.onlyUnstackables": "Only add Stack size to Unstackable Items.",
+  "text.autoconfig.stackable.option.onlyStackables": "Only add Stack size to Stackable Items.",
+  "text.autoconfig.stackable.option.forceStackSize": "Force the Stack size to every Item without excuses."
+}

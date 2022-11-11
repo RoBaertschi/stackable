@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "stackable",
+  "version": "${version}",
+  "name": "Stackable",
+  "description": "Stackable makes EVERY Item stable to 64. Modders can change that if they want to.",
+  "authors": [
+    "RoBaertschi"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/stackable/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "robaertschi.stackable.Stackable"
+    ],
+    "modmenu": [
+      "robaertschi.stackable.integration.ModMenuIntegration"
+    ]
+
+  },
+  "mixins": [
+    "stackable.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}

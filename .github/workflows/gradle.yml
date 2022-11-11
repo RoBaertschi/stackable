@@ -39,3 +39,4 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files: build/libs/*
+        body_path: changelog.md

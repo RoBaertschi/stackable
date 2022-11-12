@@ -1,5 +1,7 @@
 # Stackable
 
+[![](https://jitpack.io/v/robaertschi/stackable.svg)](https://jitpack.io/#robaertschi/stackable)
+
 Stackable is a mod that allows People to force any Item to a specific stack size. When installed it will default to 64 for every Items (including Totems, Tools and Armor). Moddeveloper can set a Maximum stacksize that will be used. This can be disabled by the User. Moddeveloper can also print a warning if this Mod does not work correctly with there Mod. They can also set a Warning when the User forces the stacksize. These warnings can be disabled.
 
 # **Could break some functionality of the game when you go over 64**

@@ -15,6 +15,9 @@
     "main": [
       "robaertschi.stackable.Stackable"
     ],
+    "client": [
+      "robaertschi.stackable.client.StackableClient"
+    ],
     "modmenu": [
       "robaertschi.stackable.integration.ModMenuIntegration"
     ]

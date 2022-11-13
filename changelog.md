@@ -1,4 +1,4 @@
-[Full Changelog](/compare/v0.2.1...v0.2.2)
+[Full Changelog](https://github.com/RoBaertschi/stackable/compare/v0.2.1...v0.2.2)
 ee4de6b Merge remote-tracking branch 'origin/master'
 845be9e Added Stack multiplier setting.
 3a0c286 Update README.md

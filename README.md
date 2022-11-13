@@ -70,7 +70,7 @@ repositories {
 Then in dependencies:
 ```gradle
 dependencies {
-        implementation 'com.github.robaertschi:stackable:${project.stackable_version}'
+        modImplementation 'com.github.robaertschi:stackable:${project.stackable_version}'
 }
 ```
 

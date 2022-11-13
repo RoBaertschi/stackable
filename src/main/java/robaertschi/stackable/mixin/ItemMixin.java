@@ -19,15 +19,27 @@ public class ItemMixin {
 
     @Inject(method = "<init>", at = @At("RETURN"))
     private void init(Item.Settings settings, CallbackInfo ci) {
+        int newMaxCount;
+
+        if(!Stackable.config.useMultiplier) {
+            newMaxCount = Stackable.config.stackSize;
+        } else {
+            newMaxCount = maxCount * Stackable.config.stackMultiplier;
+            if (newMaxCount <= 0) {
+                Stackable.warning.add(MutableText.of(new LiteralTextContent("Error: Your Mutltiplier setting needs to be higher then 0.")).setStyle(Style.EMPTY.withColor(TextColor.parse("#ff0000"))));
+                return;
+            }
+        }
+
         if(Stackable.config.onlyStackables && maxCount > 1) {
-            maxCount = Stackable.config.stackSize;
+            maxCount = newMaxCount;
         }
         if (Stackable.config.onlyUnstackables && maxCount <= 1) {
-            maxCount = Stackable.config.stackSize;
+            maxCount = newMaxCount;
         }
 
         if(!( Stackable.config.onlyStackables || Stackable.config.onlyUnstackables)) {
-            maxCount = Stackable.config.stackSize;
+            maxCount = newMaxCount;
         }
 
         if(this instanceof IDefinedStackableItem) {
@@ -44,11 +56,11 @@ public class ItemMixin {
             }
 
             if (Stackable.config.forceStackSize) {
-                maxCount = Stackable.config.stackSize;
+                maxCount = newMaxCount;
                 return;
             }
 
-            maxCount = Math.min(((IDefinedStackableItem) this).getMaxStackSize(), Stackable.config.stackSize);
+            maxCount = Math.min(((IDefinedStackableItem) this).getMaxStackSize(), newMaxCount);
 
         }
 

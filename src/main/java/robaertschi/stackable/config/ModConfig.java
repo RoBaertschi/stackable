@@ -12,6 +12,8 @@ public class ModConfig implements ConfigData {
     public boolean onlyStackables = false;
     public boolean forceStackSize = false;
     public boolean turnWarningsOff = false;
+    public boolean useMultiplier = false;
+    public int stackMultiplier = 1;
     // public boolean onlyTools = false;
 
 }

@@ -3,5 +3,8 @@
   "text.autoconfig.stackable.option.onlyUnstackables": "Only add Stack size to Unstackable Items.",
   "text.autoconfig.stackable.option.onlyStackables": "Only add Stack size to Stackable Items.",
   "text.autoconfig.stackable.option.forceStackSize": "Force the Stack size to every Item without excuses.",
-  "text.autoconfig.stackable.option.turnWarningsOff": "Turn off any warning from Mods."
+  "text.autoconfig.stackable.option.turnWarningsOff": "Turn off any warning from Mods.",
+  "text.autoconfig.stackable.option.useMultiplier": "Use Stack Multiplier instead of Stack Size.",
+  "text.autoconfig.stackable.option.stackMultiplier": "How much the Stack Size needs to be multiplied.",
+  "text.autoconfig.stackable.title": "Stackable Config Menu."
 }

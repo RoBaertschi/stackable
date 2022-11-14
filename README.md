@@ -86,7 +86,7 @@ dependencies {
 
 Then in gradle.properties:
 ```properties
-stackable_version = _version_
+stackable_version = version
 ```
 Replace _version_ with the Mod Version which you find here on GitHub Rleases/Tags or on Modrinth Project Page.
 

@@ -56,6 +56,17 @@ forceStackSize = false
 turnWarningsOff = true
 ```
 
+Use multiplier of 8:
+```toml
+stackSize = 64
+onlyUnstackables = false
+onlyStackables = false
+forceStackSize = false
+turnWarningsOff = false
+useMultiplier = true
+stackMultiplier = 8
+```
+
 ## For mod Devs.
 
 First add jitpack to the repositories as an Repo:

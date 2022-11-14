@@ -14,13 +14,14 @@ Requires Cloth Config and Fabric API
 Recommended but not needed is Mod Menu
 
 ## Config
-Default Config:
 ```toml
 stackSize = 64
 onlyUnstackables = false
 onlyStackables = false
 forceStackSize = false
 turnWarningsOff = false
+useMultiplier = false
+stackMultiplier = 1
 ```
 
 Apply the stackSize only to unstackables Items like Totems or Tools:
@@ -30,6 +31,8 @@ onlyUnstackables = true
 onlyStackables = false
 forceStackSize = false
 turnWarningsOff = false
+useMultiplier = false
+stackMultiplier = 1
 ```
 Apply only to stackables:
 ```toml
@@ -38,6 +41,8 @@ onlyUnstackables = false
 onlyStackables = true
 forceStackSize = false
 turnWarningsOff = false
+useMultiplier = false
+stackMultiplier = 1
 ```
 Force the stacksize to every item of a Mod that sets a Max stacksize:
 ```toml
@@ -46,14 +51,8 @@ onlyUnstackables = false
 onlyStackables = false
 forceStackSize = true
 turnWarningsOff = false
-```
-Turn off any Warning in Chat on joining:
-```toml
-stackSize = 64
-onlyUnstackables = false
-onlyStackables = false
-forceStackSize = false
-turnWarningsOff = true
+useMultiplier = false
+stackMultiplier = 1
 ```
 
 Use multiplier of 8:

@@ -104,9 +104,9 @@ jar {
 // configure the maven publication
 publishing {
     publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
+        //mavenJava(MavenPublication) {
+        //    from components.java
+        //}
         gpr(MavenPublication) {
             from(components.java)
         }
@@ -140,7 +140,7 @@ modrinth {
     uploadFile = remapJar // With Loom, this MUST be set to `remapJar` instead of `jar`!
     gameVersions = ["1.19.2"] // Must be an array, even with only one version
     loaders = ["fabric", "quilt"] // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
-    changelog = "Go to the GitHub and Read changelog.md or the Release."
+    changelog = "Go to the GitHub and Read changelog.txt or the Release."
     dependencies {
         required.project "fabric-api"
         required.project "cloth-config"

@@ -1,0 +1,8 @@
+Full Changelog: https://github.com/RoBaertschi/stackable/compare/v0.2.2...v0.2.3
+
+d98e0ce (HEAD -> master, tag: v0.2.3, origin/master) Update README.md
+adbf15f Update README.md
+80bc6fe Update README.md
+4a88acb Update README.md
+acec35e Finalizing Release v0.2.2
+cb15399 Finalizing Release
